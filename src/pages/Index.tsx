@@ -6,6 +6,7 @@ import CoursePath from "@/components/sections/CoursePath";
 import Projects from "@/components/sections/Projects";
 import Testimonials from "@/components/sections/Testimonials";
 import SiteFooter from "@/components/sections/SiteFooter";
+import HomeCourses from "@/components/sections/HomeCourses";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <Hero />
       <main>
         <AboutUs />
+        <HomeCourses />
         <Features />
         <Careers />
         <CoursePath />

@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   GraduationCap,
-  Sparkles,
   ArrowRight,
   Phone,
   Mail,
@@ -14,7 +13,6 @@ import {
   UserPlus,
   ChevronDown,
 } from "lucide-react";
-import hero from "@/assets/hero-uiux.png";
 
 const Hero = () => {
   return (
@@ -114,13 +112,12 @@ const Hero = () => {
       <div className="pointer-events-none absolute -right-10 top-24 shape-blob shape-mint float-slower" />
       <div className="pointer-events-none absolute left-1/2 top-[65%] hidden -translate-x-1/2 md:block shape-blob shape-mint float-slow" />
 
-      {/* Hero Content */}
-      <div className="container mx-auto grid items-center gap-10 px-4 pb-10 pt-14 md:grid-cols-2 md:pb-16 lg:gap-12 lg:py-24">
-        <div className="relative z-10 space-y-6">
+      {/* Hero Content - full width */}
+      <div className="container mx-auto px-4 pb-14 pt-16 md:pb-20 lg:py-28">
+        <div className="relative z-10 mx-auto max-w-3xl text-center space-y-6 animate-fade-in">
           <div className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm btn-glass">
             <GraduationCap className="opacity-80" />
-            <span className="font-medium">Join</span>
-            <span className="opacity-80">Enrollment Now Open</span>
+            <span className="font-medium">Enrollment Now Open</span>
             <ArrowRight size={16} className="opacity-80" />
           </div>
           <h1 className="section-title">
@@ -129,26 +126,14 @@ const Hero = () => {
           <p className="text-lg text-muted-foreground">
             Join EncrypticSecurity, where expertise meets protection. Learn from industry experts and secure your future in cybersecurity.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex items-center justify-center gap-3 flex-col sm:flex-row">
             <Button asChild variant="accent" className="hover-scale">
-              <a href="/courses">
-                Explore Courses <ArrowRight />
-              </a>
+              <a href="/courses">Explore Courses <ArrowRight /></a>
             </Button>
             <Button asChild variant="hero" className="hover-scale">
               <a href="#placement">Get Placement Assistance</a>
             </Button>
           </div>
-        </div>
-        <div className="relative">
-          <img
-            src={hero}
-            alt="Cybersecurity themed hero illustration with floating UI cards and shield"
-            className="mx-auto w-full max-w-2xl rounded-2xl border object-cover shadow-2xl"
-            loading="eager"
-            width={1024}
-            height={640}
-          />
         </div>
       </div>
     </header>
