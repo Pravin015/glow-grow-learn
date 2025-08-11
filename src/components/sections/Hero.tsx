@@ -6,10 +6,16 @@ const Hero = () => {
   return (
     <header className="relative overflow-hidden pt-8 md:pt-12 lg:pt-16">
       <nav className="container mx-auto flex items-center justify-between rounded-2xl border bg-card/80 px-4 py-3 backdrop-blur-md">
-        <a href="#" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-[hsl(var(--primary-glow))]" aria-hidden />
-          <span className="font-extrabold tracking-tight">BrightUX</span>
-        </a>
+          <a href="#" className="flex items-center gap-2" aria-label="Home">
+            <img
+              src="/lovable-uploads/c0eb2a53-c84d-4cb0-afbd-2074219ed2ae.png"
+              alt="Brand logo"
+              className="h-8 w-auto"
+              width={128}
+              height={32}
+              loading="eager"
+            />
+          </a>
         <div className="hidden items-center gap-2 sm:flex">
           <Button variant="ghost" className="btn-glass">Courses</Button>
           <Button variant="ghost" className="btn-glass">Careers</Button>
@@ -30,17 +36,17 @@ const Hero = () => {
             Friendly, modern paths to UI/UX mastery
           </div>
           <h1 className="section-title">
-            Design smarter. Learn UI/UX with real projects.
+            Design the future. Learn UI/UX the modern way.
           </h1>
           <p className="text-lg text-muted-foreground">
-            A cheerful learning platform with career-focused tracks, bite-sized lessons, and hands-on projects that make you job ready.
+            Master product design with sleek, hands‑on modules, real projects, and career-ready skills—built for the next generation of designers.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button variant="hero" className="hover-scale">
-              <GraduationCap /> Start Learning
+              <GraduationCap /> Start Free Course
             </Button>
             <Button variant="accent" className="hover-scale">
-              Explore Courses <ArrowRight />
+              Browse Curriculum <ArrowRight />
             </Button>
           </div>
         </div>

@@ -107,8 +107,7 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto,
-      Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
     background-image: radial-gradient(1200px 600px at 10% -10%, hsl(var(--brand-yellow) / 0.08), transparent),
       radial-gradient(1000px 500px at 110% 10%, hsl(var(--brand-mint) / 0.07), transparent);
   }
@@ -142,7 +141,7 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight font-display;
   }
 }
 
